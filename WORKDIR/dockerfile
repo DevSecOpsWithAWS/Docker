@@ -1,0 +1,6 @@
+FROM almalinux
+RUN mkdir /tmp/work-dir-test
+RUN cd /tmp/work-dir-test
+RUN pwd
+RUN echo "Hello World" > hello.txt
+CMD ["sleep", "100"]
